@@ -1,17 +1,13 @@
-//
-//  StudyPathApp.swift
-//  StudyPath
-//
-//  Created by Dominik on 26.03.26.
-//
-
 import SwiftUI
 
 @main
 struct StudyPathApp: App {
+    @StateObject private var viewModel = StudyTrackerViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }

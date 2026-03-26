@@ -1,0 +1,37 @@
+[
+  { "id": "oop-java", "code": "OOPJ", "name": "Grundlagen der objektorientierten Programmierung mit Java", "semester": 1, "ects": 5, "examType": "Klausur" },
+  { "id": "softwaretechnik", "code": "GIST", "name": "Grundlagen industrieller Softwaretechnik", "semester": 1, "ects": 5, "examType": "Klausur" },
+  { "id": "datenbanken", "code": "DBAS", "name": "Datenmodellierung und Datenbanksysteme", "semester": 1, "ects": 5, "examType": "Klausur" },
+  { "id": "wissenschaftliches-arbeiten", "code": "WIA", "name": "Einführung in das wissenschaftliche Arbeiten für IT und Technik", "semester": 1, "ects": 5, "examType": "Hausarbeit" },
+  { "id": "requirements", "code": "RE", "name": "Requirements Engineering", "semester": 1, "ects": 5, "examType": "Klausur" },
+
+  { "id": "kollaboratives-arbeiten", "code": "KA", "name": "Kollaboratives Arbeiten", "semester": 2, "ects": 5, "examType": "Hausarbeit" },
+  { "id": "spezifikation", "code": "SPEZ", "name": "Spezifikation", "semester": 2, "ects": 5, "examType": "Klausur" },
+  { "id": "datenstrukturen", "code": "DSA", "name": "Datenstrukturen und Java-Klassenbibliothek", "semester": 2, "ects": 5, "examType": "Klausur" },
+  { "id": "web-programmierung", "code": "WEB", "name": "Programmierung von Web-Anwendungsoberflächen", "semester": 2, "ects": 5, "examType": "Klausur" },
+
+  { "id": "algorithmen", "code": "ALG", "name": "Algorithmen, Datenstrukturen und Programmierprachen", "semester": 3, "ects": 5, "examType": "Klausur" },
+  { "id": "ethik-it", "code": "ETHIK", "name": "Ethik und Nachhaltigkeit in der IT", "semester": 3, "ects": 5, "examType": "Hausarbeit" },
+  { "id": "softwaremethoden", "code": "SEM", "name": "Techniken und Methoden der agilen Softwareentwicklung", "semester": 3, "ects": 5, "examType": "Projektarbeit" },
+  { "id": "it-architektur", "code": "ITA", "name": "IT-Architekturmanagement", "semester": 3, "ects": 5, "examType": "Klausur" },
+  { "id": "java-ee", "code": "JEE", "name": "Programming Information Systems with Java EE", "semester": 3, "ects": 5, "examType": "Projektarbeit" },
+
+  { "id": "seminar-se", "code": "SEMINAR", "name": "Seminar: Software Engineering", "semester": 4, "ects": 5, "examType": "Seminararbeit" },
+  { "id": "servicemanagement", "code": "SM", "name": "IT-Servicemanagement", "semester": 4, "ects": 5, "examType": "Klausur" },
+  { "id": "devops", "code": "DEVOPS", "name": "DevOps und Continuous Delivery", "semester": 4, "ects": 5, "examType": "Projektarbeit" },
+  { "id": "cloud", "code": "CLOUD", "name": "Cloud Programming", "semester": 4, "ects": 5, "examType": "Projektarbeit" },
+
+  { "id": "mobile-se", "code": "MOBILE", "name": "Mobile Software Engineering and Design", "semester": 5, "ects": 5, "examType": "Projektarbeit" },
+  { "id": "projekt-mobile", "code": "PMSE", "name": "Projekt Mobile Software Engineering", "semester": 5, "ects": 5, "examType": "Projektbericht" },
+  { "id": "python", "code": "PYTHON", "name": "Einführung in die Programmierung mit Python", "semester": 5, "ects": 5, "examType": "Klausur" },
+  { "id": "projekt-agil", "code": "PASE", "name": "Projekt Agiles Software Engineering", "semester": 5, "ects": 5, "examType": "Projektarbeit" },
+  { "id": "projekt-dev", "code": "PSD", "name": "Projekt: Software Development", "semester": 5, "ects": 5, "examType": "Projektbericht" },
+
+  { "id": "qualitaet", "code": "QS", "name": "Qualitätssicherung im Softwareprozess", "semester": 6, "ects": 5, "examType": "Klausur" },
+
+  { "id": "wahlpflicht-b", "code": "WPB", "name": "Wahlpflichtmodul B", "semester": 6, "ects": 10, "examType": "Individuell" },
+
+  { "id": "wahlpflicht-c", "code": "WPC", "name": "Wahlpflichtmodul C", "semester": 6, "ects": 10, "examType": "Individuell" },
+
+  { "id": "wahlpflicht-a", "code": "WPA", "name": "Wahlpflichtmodul A", "semester": 8, "ects": 10, "examType": "Individuell" },
+]

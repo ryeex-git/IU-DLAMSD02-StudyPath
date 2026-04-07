@@ -1,50 +1,37 @@
 import SwiftUI
 
 struct ContentView: View {
-    init() {
-        let appearance = UITabBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .white
-
-        appearance.stackedLayoutAppearance.selected.iconColor = .systemBlue
-        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [
-            .foregroundColor: UIColor.systemBlue
-        ]
-
-        appearance.stackedLayoutAppearance.normal.iconColor = .darkGray
-        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
-            .foregroundColor: UIColor.darkGray
-        ]
-
-        UITabBar.appearance().standardAppearance = appearance
-        UITabBar.appearance().scrollEdgeAppearance = appearance
-        UITabBar.appearance().unselectedItemTintColor = .darkGray
-    }
+    @State private var selectedTab: AppTab = .dashboard
 
     var body: some View {
-        TabView {
-            NavigationStack {
-                DashboardView()
-            }
-            .tabItem {
-                Label("Dashboard", systemImage: "chart.pie.fill")
-            }
+        VStack(spacing: 0) {
 
-            NavigationStack {
-                ModuleListView()
-            }
-            .tabItem {
-                Label("Module", systemImage: "list.bullet")
-            }
+            Group {
+                switch selectedTab {
+                case .dashboard:
+                    NavigationStack {
+                        DashboardView()
+                    }
 
-            NavigationStack {
-                TimelineView().background(Color.blue.opacity(0.1))
+                case .modules:
+                    NavigationStack {
+                        ModuleListView()
+                    }
+
+                case .timeline:
+                    NavigationStack {
+                        TimelineView()
+                    }
+                }
             }
-            .tabItem {
-                Label("Timeline", systemImage: "calendar")
-            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+            Divider()
+
+            CustomTabBar(selectedTab: $selectedTab)
+                .background(Color.white)
         }
-        .tint(.blue)
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .preferredColorScheme(.light)
     }
 }
